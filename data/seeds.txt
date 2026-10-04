@@ -1,0 +1,10 @@
+https://archlinux.org/
+https://en.wikipedia.org/wiki/Main_Page
+https://news.ycombinator.com/
+https://lobste.rs/
+https://kernel.org/
+https://pypi.org/
+https://docs.python.org/3/
+https://man.archlinux.org/
+https://github.blog/
+https://pypi.org/help/

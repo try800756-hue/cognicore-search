@@ -1,0 +1,14 @@
+[Unit]
+Description=Cognicore Search Engine Continuous Crawler Daemon
+After=network.target
+
+[Service]
+Type=simple
+User=ghost
+WorkingDirectory=/home/ghost/cognicore
+ExecStart=/home/ghost/cognicore/.venv/bin/python crawler/daemon.py
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target

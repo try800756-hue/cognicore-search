@@ -1,0 +1,46 @@
+nohup: ignoring input
+2026-10-04T01:38:52Z INF Starting tunnel tunnelID=7065b562-6ef0-4609-b7a5-3834a3dbfcdb
+2026-10-04T01:38:52Z INF Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp /etc/cloudflared /usr/local/etc/cloudflared]
+2026-10-04T01:38:52Z INF Version 2026.9.3 (Checksum 563a10bde0e09348f6557dd77038d8549b5187a5d3d521aff36bba52ac334e86)
+2026-10-04T01:38:52Z INF GOOS: linux, GOVersion: go1.27.1-X:nodwarf5, GoArch: amd64
+2026-10-04T01:38:52Z INF Settings: map[url:http://localhost:5000]
+2026-10-04T01:38:52Z INF cloudflared will not automatically update if installed by a package manager.
+2026-10-04T01:38:52Z INF Generated Connector ID: 7d99994e-6e72-4acb-bde7-ff881424b0e6
+2026-10-04T01:38:52Z INF Initial protocol quic
+2026-10-04T01:38:52Z INF ICMP proxy will use 192.168.42.128 as source for IPv4
+2026-10-04T01:38:52Z INF ICMP proxy will use fe80::ec3c:f513:bed1:52ee in zone enp0s29u1u2 as source for IPv6
+2026-10-04T01:38:52Z INF ICMP proxy will use 192.168.42.128 as source for IPv4
+2026-10-04T01:38:52Z INF ICMP proxy will use fe80::ec3c:f513:bed1:52ee in zone enp0s29u1u2 as source for IPv6
+2026-10-04T01:38:52Z INF Starting metrics server on 127.0.0.1:20241/metrics
+2026-10-04T01:38:52Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=0 event=0 ip=198.41.192.57
+2026-10-04T01:38:54Z INF Registered tunnel connection connIndex=0 connection=d9814263-9cc0-41c9-9057-7229cd14b8ad event=0 ip=198.41.192.57 location=ebb01 protocol=quic
+2026-10-04T01:38:54Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=1 event=0 ip=198.41.200.53
+2026-10-04T01:38:55Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=2 event=0 ip=198.41.200.13
+2026-10-04T01:38:55Z INF Registered tunnel connection connIndex=1 connection=ac3d6492-3f53-4147-89cd-f4a98b5a9ae4 event=0 ip=198.41.200.53 location=jnb01 protocol=quic
+2026-10-04T01:38:56Z INF Tunnel connection curve preferences: [X25519MLKEM768 CurveID(65074) CurveP256] connIndex=3 event=0 ip=198.41.192.227
+2026-10-04T01:38:56Z INF Registered tunnel connection connIndex=2 connection=f84c0688-b4c6-466b-813a-cdfbb8094994 event=0 ip=198.41.200.13 location=jnb04 protocol=quic
+2026-10-04T01:38:57Z INF Registered tunnel connection connIndex=3 connection=52efcc55-45f6-416f-a1fe-55d0ce69772d event=0 ip=198.41.192.227 location=ebb01 protocol=quic
+2026-10-04T01:38:58Z INF +-------------------------------------------------------------------------------------+
+2026-10-04T01:38:58Z INF |                               CONNECTIVITY PRE-CHECKS                               |
+2026-10-04T01:38:58Z INF +-------------------------------------------------------------------------------------+
+2026-10-04T01:38:58Z INF |  COMPONENT         TARGET                     STATUS  DETAILS                       |
+2026-10-04T01:38:58Z INF |  DNS Resolution    region1.v2.argotunnel.com  PASS    DNS Resolved successfully     |
+2026-10-04T01:38:58Z INF |  DNS Resolution    region2.v2.argotunnel.com  PASS    DNS Resolved successfully     |
+2026-10-04T01:38:58Z INF |  UDP Connectivity  region1.v2.argotunnel.com  PASS    QUIC connection successful    |
+2026-10-04T01:38:58Z INF |  UDP Connectivity  region2.v2.argotunnel.com  PASS    QUIC connection successful    |
+2026-10-04T01:38:58Z INF |  TCP Connectivity  region1.v2.argotunnel.com  PASS    HTTP/2 connection successful  |
+2026-10-04T01:38:58Z INF |  TCP Connectivity  region2.v2.argotunnel.com  PASS    HTTP/2 connection successful  |
+2026-10-04T01:38:58Z INF |  Cloudflare API    api.cloudflare.com:443     PASS    API is reachable              |
+2026-10-04T01:38:58Z INF |                                                                                     |
+2026-10-04T01:38:58Z INF |  SUMMARY: Environment is healthy. cloudflared will use 'quic' as primary protocol.  |
+2026-10-04T01:38:58Z INF +-------------------------------------------------------------------------------------+
+2026-10-04T01:38:58Z INF precheck component="DNS Resolution" details="DNS Resolved successfully" run_id=f77a9881-3ee8-476d-a96e-86e3cf84fb73 status=pass target=region1.v2.argotunnel.com
+2026-10-04T01:38:58Z INF precheck component="DNS Resolution" details="DNS Resolved successfully" run_id=f77a9881-3ee8-476d-a96e-86e3cf84fb73 status=pass target=region2.v2.argotunnel.com
+2026-10-04T01:38:58Z INF precheck component="UDP Connectivity" details="QUIC connection successful" run_id=f77a9881-3ee8-476d-a96e-86e3cf84fb73 status=pass target=region1.v2.argotunnel.com
+2026-10-04T01:38:58Z INF precheck component="UDP Connectivity" details="QUIC connection successful" run_id=f77a9881-3ee8-476d-a96e-86e3cf84fb73 status=pass target=region2.v2.argotunnel.com
+2026-10-04T01:38:58Z INF precheck component="TCP Connectivity" details="HTTP/2 connection successful" run_id=f77a9881-3ee8-476d-a96e-86e3cf84fb73 status=pass target=region1.v2.argotunnel.com
+2026-10-04T01:38:58Z INF precheck component="TCP Connectivity" details="HTTP/2 connection successful" run_id=f77a9881-3ee8-476d-a96e-86e3cf84fb73 status=pass target=region2.v2.argotunnel.com
+2026-10-04T01:38:58Z INF precheck component="Cloudflare API" details="API is reachable" run_id=f77a9881-3ee8-476d-a96e-86e3cf84fb73 status=pass target=api.cloudflare.com:443
+2026-10-04T01:38:58Z INF precheck complete hard_fail=false run_id=f77a9881-3ee8-476d-a96e-86e3cf84fb73 suggested_protocol=quic
+2026-10-04T02:59:58Z ERR  error="Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: dial tcp [::1]:5000: connect: connection refused" connIndex=0 event=1 ingressRule=0 originService=http://localhost:5000
+2026-10-04T02:59:58Z ERR Request failed error="Unable to reach the origin service. The service may be down or it may not be responding to traffic from cloudflared: dial tcp [::1]:5000: connect: connection refused" connIndex=0 dest=https://cognicoretech.com/ event=0 ip=198.41.192.57 type=http
